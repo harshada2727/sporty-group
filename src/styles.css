@@ -1,0 +1,160 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom right, #f9f9f9, #e8f0ff);
+  color: #333;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 600px) {
+  .controls {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+input[type="text"],
+select {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.league-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .league-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .league-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.league-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.league-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.league-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1e293b;
+}
+
+.league-sport {
+  font-size: 0.95rem;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+.league-alt {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.badge-container {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.badge-img {
+  margin-top: 14px;
+  max-width: 100px;
+  max-height: 100%;
+  object-fit: contain;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 50px;
+}
+
+.football-loader-container {
+  display: flex;
+  padding: 20px;
+}
+.football-loader-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.bouncing-ball {
+  font-size: 40px;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.loading-text {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
