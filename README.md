@@ -52,4 +52,35 @@ This project benefited from productivity enhancements through AI-assisted develo
 
 ---
 
+
+## Setup
+
+- Install Node.js
+- git clone https://github.com/harshada2727/sporty-group.git
+- cd sporty-group
+- npm install
+- npm start
+- Open http://localhost:3000 in your browser.
+
+
+## Screenshots
+
+![Homepage](https://raw.githubusercontent.com/harshada2727/sporty-group/main/public/screenshots/landing_page.png)
+*Homepage*
+
+![Filter_Functionality](https://raw.githubusercontent.com/harshada2727/sporty-group/main/public/screenshots/filter_functionality.png)
+*Filter Functionality*
+
+![Search_Functionality](https://raw.githubusercontent.com/harshada2727/sporty-group/main/public/screenshots/search_functionality.png)
+*Search Functionality*
+
+![Display_Season_Badge](https://raw.githubusercontent.com/harshada2727/sporty-group/main/public/screenshots/display_season_badge.png)
+*Display Season Badge*
+
+![API_for_Badge](https://raw.githubusercontent.com/harshada2727/sporty-group/main/public/screenshots/api_for_badge.png)
+*API for badge*
+
+![Caching_log](https://raw.githubusercontent.com/harshada2727/sporty-group/main/public/screenshots/caching_log.png)
+*Caching log*
+
 > This README serves as documentation to reviewers, mentors, or interviewers to understand the app's strengths, development process, and improvement roadmap.
